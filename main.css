@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.box {
+    border: 2px solid black;
+    width: 100%;
+    height: 33rem;
+    margin: auto;
+    border-collapse: collapse;
+    justify-content: center;
+    align-content: center;
+}
+.box caption{
+    border: 2px dashed black;
+    background-color: aliceblue;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 3px;
+    color: black;
+    font-style: italic;
+    position: relative;
+    animation: my 0.7s ease-in-out infinite alternate-reverse;
+    text-shadow: 10px 10px 25px blue;
+	transition: all 3s ease-in-out ;
+    
+}
+@keyframes my{
+    0% {
+		opacity: 0.1;
+		text-shadow: 1px 1px 20px blue;
+	}
+    30%{
+        opacity: 0.4;
+        text-shadow: 1px 1px 25px blue;
+    }
+    70%{
+        opacity: 0.7;
+        text-shadow: 1px 1px 27px blue;
+    }
+	100% {
+		opacity: 1;
+		text-shadow: 1px 1px 30px blue;
+	}
+}
+.box tbody{
+    border-radius: 15px;
+}
+.box tbody td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+.box tbody td:nth-child(odd){
+    background-color: rgba(24, 219, 233, 0.774);
+}
+.box tbody td:nth-child(even){
+    background-color: rgb(245, 242, 80);
+}
+.child td {
+    background-color: blue;
+}
